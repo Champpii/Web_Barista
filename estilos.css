@@ -66,6 +66,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .tarjeta-promo {
@@ -95,6 +101,25 @@ main {
     font-size: 0.95rem;
     color: #555555;
     margin-bottom: 12px;
+}
+
+.vigencia {
+    font-size: 0.85rem;
+    color: #8d6e63;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.contenedor-precios {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.precio-anterior {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: #a1887f;
 }
 
 .precio {
